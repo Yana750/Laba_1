@@ -1,4 +1,8 @@
 from openpyxl import load_workbook
 import pandas as pd
 
-wb = load_workbook('lab_pi_101.xlsx')
+pathname = './lab_pi_101.xlsx'
+wb=pd.read_excel(pathname)
+groups = wb["Группа"]
+all_estimate = wb["Оценка"]
+group_estimate=wb["ПИ101"].shape[0]
