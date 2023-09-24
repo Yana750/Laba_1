@@ -5,4 +5,4 @@ pathname = './lab_pi_101.xlsx'
 wb=pd.read_excel(pathname)
 groups = wb["Группа"]
 all_estimate = wb["Оценка"]
-group_estimate=wb["ПИ101"].shape[0]
+group_estimate=wb["Группа"].shape[0]
